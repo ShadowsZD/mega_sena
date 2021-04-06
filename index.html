@@ -1,0 +1,59 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.3/jquery.csv.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.6.0/dist/slate/bootstrap.css">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<div class="container">
+
+    <p class='text-center' id="comment"></p>
+
+    <div class='form-row'>
+        <script src='createCheckbox.js'></script> 
+    </div>
+
+</div>
+
+<div class="container-fluid">
+    <p class='text-center' id="userGame"></p>
+    <div class='row'>
+        <div class="col text-center">
+            <div class="btn-group">
+                <button onclick="checkGame()" class='btn btn-secondary' id="checkBtn">Conferir</button>
+                <button onclick="loadGames()" class='btn btn-secondary' id="loadBtn">Carregar</button>
+                <button onclick="resetGame()" class='btn btn-secondary' id="resetBtn">Reset Numeros</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class = 'row'>
+        <div id='winnerGamesMega' class="col" style="background-color:green;">
+            <p style='color:black'> Mega! </p>
+            <ul style='color:black' id='Mega'>
+            </ul>
+        </div>
+        <div id='winnerGamesQuina' class="col" style="background-color:rgb(224, 167, 60);">
+            <p style='color:black'>Quina</p>
+            <ul style='color:black' id = 'Quina'>
+
+            </ul>
+        </div>
+        <div id='winnerGamesQuadra' class="col" style="background-color:rgb(133, 59, 59);">
+            <p style='color:black'>Quadra</p>
+            <ul style='color:black' id='Quadra'>
+
+            </ul>
+        </div>
+    </div>
+
+<script src='main.js'>
+
+
+    
+</script>
+
+<br/>
+</div>
